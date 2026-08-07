@@ -50,7 +50,13 @@ jobs:
 
     - name: Build Docker Image (Test)
       run: |
-        docker build -t ml-eda-full-fledge .
+        docker build -t nitins1/ml-eda-full-fledge:latest .
+
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Push Docker Image to Docker Hub (Test)
       run: |
