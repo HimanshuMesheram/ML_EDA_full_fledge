@@ -16,6 +16,11 @@ TEST_PROCESSED_PATH = PROCESSED_DATA_DIR / "test_processed.csv"
 # Models Directory Paths
 MODELS_DIR = PROJ_ROOT / "models"
 MODEL_PATH = MODELS_DIR / "baseline_rf_model.joblib"
+# Models metadata path for versioning
+MODELS_METADATA_PATH = MODELS_DIR / "models_metadata.json"
+
+# Logs directory
+LOGS_DIR = PROJ_ROOT / "logs"
 
 # Reports Directory Paths
 REPORTS_DIR = PROJ_ROOT / "reports"

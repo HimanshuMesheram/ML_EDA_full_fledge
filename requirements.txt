@@ -9,3 +9,5 @@ shap>=0.42.0
 joblib>=1.2.0
 pytest>=9.0.0
 ruff>=0.16.0
+Flask>=2.0.0
+xgboost>=1.7.0

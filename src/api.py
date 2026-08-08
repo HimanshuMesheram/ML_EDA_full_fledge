@@ -7,17 +7,26 @@ from typing import Any, Dict
 
 import joblib
 import pandas as pd
+from pathlib import Path
+from src.models_manager import get_latest_model_path, get_model_by_version
+from src.logger import get_logger
 
-from src.config import MODEL_PATH
+logger = get_logger(__name__)
 from src.features import execute_feature_engineering
 
 
 class LoanDefaultPredictor:
     """Production predictor wrapper for online or batch loan default scoring."""
 
-    def __init__(self, model_path=MODEL_PATH):
-        if not model_path.exists():
-            raise FileNotFoundError(f"Model file not found at {model_path}. Train model first.")
+    def __init__(self, model_path=None, model_name: str = "random_forest", model_version: str = None):
+        if model_path is None:
+            if model_version:
+                model_path = get_model_by_version(model_name, model_version)
+            else:
+                model_path = get_latest_model_path(model_name)
+
+        if model_path is None or not Path(str(model_path)).exists():
+            raise FileNotFoundError(f"Model file not found. Train model first.")
         self.model = joblib.load(model_path)
 
     def predict_single(self, application_dict: Dict[str, Any]) -> Dict[str, Any]:
