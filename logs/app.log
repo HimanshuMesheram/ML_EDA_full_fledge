@@ -38,3 +38,49 @@
 2026-08-08 09:44:04,234 - src.reports - INFO - Generated evaluation figures in: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\random_forest\figures'
 2026-08-08 09:44:04,483 - src.reports - INFO - Saved evaluation metrics to: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\xgboost\metrics.json'
 2026-08-08 09:44:06,161 - src.reports - INFO - Generated evaluation figures in: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\xgboost\figures'
+2026-08-08 09:56:06,650 - src.modeling.train - INFO - Loading processed dataset artifacts...
+2026-08-08 09:56:07,113 - src.modeling.train - INFO - Training Logistic Regression Classifier...
+2026-08-08 09:56:14,052 - src.modeling.train - INFO - Training Random Forest Classifier...
+2026-08-08 09:56:17,048 - src.modeling.train - INFO - Training XGBoost Classifier...
+2026-08-08 09:56:17,786 - src.modeling.train - INFO - ================================================================================
+2026-08-08 09:56:17,786 - src.modeling.train - INFO - MODEL TRAINING & EVALUATION RESULTS
+2026-08-08 09:56:17,786 - src.modeling.train - INFO - ================================================================================
+2026-08-08 09:56:17,787 - src.modeling.train - INFO - Logistic Regression | Test ROC-AUC: 0.8459 | Test PR-AUC: 0.7731
+2026-08-08 09:56:17,787 - src.modeling.train - INFO - Random Forest       | Test ROC-AUC: 0.8851 | Test PR-AUC: 0.8271
+2026-08-08 09:56:17,787 - src.modeling.train - INFO - XGBoost             | Test ROC-AUC: 0.8901 | Test PR-AUC: 0.8393
+2026-08-08 09:56:17,787 - src.modeling.train - INFO - ================================================================================
+2026-08-08 09:56:17,794 - src.modeling.train - INFO - Saved Logistic Regression model to: D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\models\model_logistic_regression_20260808042617.joblib
+2026-08-08 09:56:17,874 - src.modeling.train - INFO - Saved Random Forest model to: D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\models\model_random_forest_20260808042617.joblib
+2026-08-08 09:56:17,899 - src.modeling.train - INFO - Saved XGBoost model to: D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\models\model_xgboost_20260808042617.joblib
+2026-08-08 09:56:18,150 - src.reports - INFO - Saved evaluation metrics to: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\logistic_regression\metrics.json'
+2026-08-08 09:56:19,764 - src.reports - INFO - Generated evaluation figures in: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\logistic_regression\figures'
+2026-08-08 09:56:20,095 - src.reports - INFO - Saved evaluation metrics to: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\random_forest\metrics.json'
+2026-08-08 09:56:21,878 - src.reports - INFO - Generated evaluation figures in: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\random_forest\figures'
+2026-08-08 09:56:22,206 - src.reports - INFO - Saved evaluation metrics to: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\xgboost\metrics.json'
+2026-08-08 09:56:24,042 - src.reports - INFO - Generated evaluation figures in: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\xgboost\figures'
+2026-08-08 10:08:02,895 - __main__ - INFO - flask-cors not installed; CORS disabled
+2026-08-08 10:08:42,730 - __main__ - INFO - flask-cors not installed; CORS disabled
+2026-08-08 10:10:00,594 - __main__ - INFO - flask-cors not installed; CORS disabled
+2026-08-08 10:10:00,596 - __main__ - INFO - Registered routes:
+Map([<Rule '/static/<filename>' (GET, OPTIONS, HEAD) -> static>,
+ <Rule '/predict' (OPTIONS, POST) -> predict>,
+ <Rule '/health' (GET, OPTIONS, HEAD) -> health>,
+ <Rule '/' (GET, OPTIONS, HEAD) -> index>,
+ <Rule '/models' (GET, OPTIONS, HEAD) -> models>,
+ <Rule '/models/' (GET, OPTIONS, HEAD) -> models_slash>])
+2026-08-08 10:11:18,368 - __main__ - INFO - flask-cors not installed; CORS disabled
+2026-08-08 10:11:18,371 - __main__ - INFO - Registered routes:
+Map([<Rule '/static/<filename>' (GET, HEAD, OPTIONS) -> static>,
+ <Rule '/predict' (POST, OPTIONS) -> predict>,
+ <Rule '/health' (GET, HEAD, OPTIONS) -> health>,
+ <Rule '/' (GET, HEAD, OPTIONS) -> index>,
+ <Rule '/models' (GET, HEAD, OPTIONS) -> models>,
+ <Rule '/models/' (GET, HEAD, OPTIONS) -> models_slash>])
+2026-08-08 10:13:21,625 - __main__ - INFO - flask-cors not installed; CORS disabled
+2026-08-08 10:13:21,628 - __main__ - INFO - Registered routes:
+Map([<Rule '/static/<filename>' (OPTIONS, GET, HEAD) -> static>,
+ <Rule '/predict' (OPTIONS, POST) -> predict>,
+ <Rule '/health' (OPTIONS, GET, HEAD) -> health>,
+ <Rule '/' (OPTIONS, GET, HEAD) -> index>,
+ <Rule '/models' (OPTIONS, GET, HEAD) -> models>,
+ <Rule '/models/' (OPTIONS, GET, HEAD) -> models_slash>])
