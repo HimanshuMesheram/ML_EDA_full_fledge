@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import joblib
 import matplotlib.pyplot as plt
@@ -18,7 +19,6 @@ from sklearn.metrics import (
 
 from src.config import FIGURES_DIR, REPORTS_DIR, TARGET_COL, TEST_PROCESSED_PATH
 from src.logger import get_logger
-from pathlib import Path
 
 logger = get_logger(__name__)
 

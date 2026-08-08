@@ -1,9 +1,10 @@
-from flask import Flask, request, jsonify
-from src.models_manager import get_latest_model_path, get_model_by_version
-from src.features import execute_feature_engineering
 import joblib
 import pandas as pd
+from flask import Flask, jsonify, request
+
+from src.features import execute_feature_engineering
 from src.logger import get_logger
+from src.models_manager import get_latest_model_path, get_model_by_version
 
 logger = get_logger(__name__)
 app = Flask(__name__)

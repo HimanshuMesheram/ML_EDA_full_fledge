@@ -3,16 +3,17 @@ Loan Default Prediction Inference API Endpoint
 """
 
 import json
+from pathlib import Path
 from typing import Any, Dict
 
 import joblib
 import pandas as pd
-from pathlib import Path
-from src.models_manager import get_latest_model_path, get_model_by_version
+
+from src.features import execute_feature_engineering
 from src.logger import get_logger
+from src.models_manager import get_latest_model_path, get_model_by_version
 
 logger = get_logger(__name__)
-from src.features import execute_feature_engineering
 
 
 class LoanDefaultPredictor:
@@ -26,7 +27,7 @@ class LoanDefaultPredictor:
                 model_path = get_latest_model_path(model_name)
 
         if model_path is None or not Path(str(model_path)).exists():
-            raise FileNotFoundError(f"Model file not found. Train model first.")
+            raise FileNotFoundError("Model file not found. Train model first.")
         self.model = joblib.load(model_path)
 
     def predict_single(self, application_dict: Dict[str, Any]) -> Dict[str, Any]:

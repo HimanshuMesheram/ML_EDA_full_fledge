@@ -4,10 +4,10 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import average_precision_score, roc_auc_score
 
-from src.config import MODELS_DIR, TARGET_COL, TEST_PROCESSED_PATH, TRAIN_PROCESSED_PATH
-from src.models_manager import save_model
-from src.logger import get_logger
 from src import reports
+from src.config import MODELS_DIR, TARGET_COL, TEST_PROCESSED_PATH, TRAIN_PROCESSED_PATH
+from src.logger import get_logger
+from src.models_manager import save_model
 
 logger = get_logger(__name__)
 

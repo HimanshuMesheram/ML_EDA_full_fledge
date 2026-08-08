@@ -22,5 +22,29 @@
     "created_at_utc": "2026-08-08T03:55:38.206045",
     "roc_auc": 0.8901099540262726,
     "pr_auc": 0.8392578312766064
+  },
+  {
+    "model_name": "logistic_regression",
+    "path": "D:/ML DL AI/BrainWorks/Lectures/2026/02-08-2026/ML_EDA_full_fledge/ML_EDA_full_fledge/models/model_logistic_regression_20260808041400.joblib",
+    "version": "20260808041400",
+    "created_at_utc": "2026-08-08T04:14:00.416413",
+    "roc_auc": 0.8459330559119964,
+    "pr_auc": 0.7730817779382128
+  },
+  {
+    "model_name": "random_forest",
+    "path": "D:/ML DL AI/BrainWorks/Lectures/2026/02-08-2026/ML_EDA_full_fledge/ML_EDA_full_fledge/models/model_random_forest_20260808041400.joblib",
+    "version": "20260808041400",
+    "created_at_utc": "2026-08-08T04:14:00.467140",
+    "roc_auc": 0.8851057841308492,
+    "pr_auc": 0.8271389574322675
+  },
+  {
+    "model_name": "xgboost",
+    "path": "D:/ML DL AI/BrainWorks/Lectures/2026/02-08-2026/ML_EDA_full_fledge/ML_EDA_full_fledge/models/model_xgboost_20260808041400.joblib",
+    "version": "20260808041400",
+    "created_at_utc": "2026-08-08T04:14:00.499863",
+    "roc_auc": 0.8901099540262726,
+    "pr_auc": 0.8392578312766064
   }
 ]

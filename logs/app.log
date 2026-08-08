@@ -18,3 +18,23 @@
 2026-08-08 09:25:43,925 - src.reports - INFO - Generated evaluation figures in: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\random_forest\figures'
 2026-08-08 09:25:44,179 - src.reports - INFO - Saved evaluation metrics to: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\xgboost\metrics.json'
 2026-08-08 09:25:46,113 - src.reports - INFO - Generated evaluation figures in: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\xgboost\figures'
+2026-08-08 09:43:49,075 - src.modeling.train - INFO - Loading processed dataset artifacts...
+2026-08-08 09:43:49,995 - src.modeling.train - INFO - Training Logistic Regression Classifier...
+2026-08-08 09:43:56,875 - src.modeling.train - INFO - Training Random Forest Classifier...
+2026-08-08 09:43:59,709 - src.modeling.train - INFO - Training XGBoost Classifier...
+2026-08-08 09:44:00,412 - src.modeling.train - INFO - ================================================================================
+2026-08-08 09:44:00,412 - src.modeling.train - INFO - MODEL TRAINING & EVALUATION RESULTS
+2026-08-08 09:44:00,413 - src.modeling.train - INFO - ================================================================================
+2026-08-08 09:44:00,413 - src.modeling.train - INFO - Logistic Regression | Test ROC-AUC: 0.8459 | Test PR-AUC: 0.7731
+2026-08-08 09:44:00,413 - src.modeling.train - INFO - Random Forest       | Test ROC-AUC: 0.8851 | Test PR-AUC: 0.8271
+2026-08-08 09:44:00,413 - src.modeling.train - INFO - XGBoost             | Test ROC-AUC: 0.8901 | Test PR-AUC: 0.8393
+2026-08-08 09:44:00,413 - src.modeling.train - INFO - ================================================================================
+2026-08-08 09:44:00,417 - src.modeling.train - INFO - Saved Logistic Regression model to: D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\models\model_logistic_regression_20260808041400.joblib
+2026-08-08 09:44:00,494 - src.modeling.train - INFO - Saved Random Forest model to: D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\models\model_random_forest_20260808041400.joblib
+2026-08-08 09:44:00,512 - src.modeling.train - INFO - Saved XGBoost model to: D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\models\model_xgboost_20260808041400.joblib
+2026-08-08 09:44:00,676 - src.reports - INFO - Saved evaluation metrics to: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\logistic_regression\metrics.json'
+2026-08-08 09:44:02,056 - src.reports - INFO - Generated evaluation figures in: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\logistic_regression\figures'
+2026-08-08 09:44:02,457 - src.reports - INFO - Saved evaluation metrics to: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\random_forest\metrics.json'
+2026-08-08 09:44:04,234 - src.reports - INFO - Generated evaluation figures in: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\random_forest\figures'
+2026-08-08 09:44:04,483 - src.reports - INFO - Saved evaluation metrics to: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\xgboost\metrics.json'
+2026-08-08 09:44:06,161 - src.reports - INFO - Generated evaluation figures in: 'D:\ML DL AI\BrainWorks\Lectures\2026\02-08-2026\ML_EDA_full_fledge\ML_EDA_full_fledge\reports\xgboost\figures'
